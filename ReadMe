@@ -1,0 +1,20 @@
+Paradigme de programare
+Tema 1
+Samoila Lavinia Andreea 323CA
+
+	Pentru a reprezenta lumea, am folosit vectori pentru ca era mai usor sa verific ce anume este un anumit element. Fisierul este citit linie cu linie. Marimea lumii este tinuta minte in _size_.
+	Fiindca in GUI am reprezentat lumea folosind imagini, am trebuit sa folosesc pentru canvas si scrollbars in caz ca se da o matrice mare. (Imaginile sunt96/96 px). In campul _previous_ tin minte ultima miscare:
+		- up = 0
+		- down = 1
+		- left = 2
+		- right = 3
+	_status_ - afiseaza daca furnica a murit sau nu.
+Daca furnica moare, nu se va mai misca.
+	Lista _ant_pos_ contine toate pozitiile  anterioare ale furnicii. Primele doua elemente vor fi pozitia (x,y) curenta.
+	Cele doua comportamente au o parte comuna. Daca intalneste urma, o va urma. Prioritate are insa mancarea. 
+	
+Comportament 1: _function1_
+	Daca furnica mergea up/down, va incerca sa mearga stanga sau dreapta. Daca nu poate, va vedea care din pozitiile up/down este posibila si o va lua  pe aceea. Este posibil sa se intoarca de unde a venit.
+
+Comportament 2: _function2_
+	Nu se va intoarce la pozitia anterioara. Va alege random una din cele 3 pozitii ramase. Daca nu e posibila pozitia aleasa, va apela functia move care da prima pozitie posibila (in ordinea: right, left, up, down).
