@@ -1,6 +1,7 @@
 Paradigme de programare
-Tema 1
+Assignment 1
 Samoila Lavinia Andreea 323CA
+March 2011
 
 	Pentru a reprezenta lumea, am folosit vectori pentru ca era mai usor sa verific ce anume este un anumit element. Fisierul este citit linie cu linie. Marimea lumii este tinuta minte in _size_.
 	Fiindca in GUI am reprezentat lumea folosind imagini, am trebuit sa folosesc pentru canvas si scrollbars in caz ca se da o matrice mare. (Imaginile sunt96/96 px). In campul _previous_ tin minte ultima miscare:
